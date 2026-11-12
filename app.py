@@ -129,7 +129,7 @@ def claude_param():
         message = client.messages.create(
             model="claude-haiku-4-5-20251001",
             max_tokens=500,  # 카카오톡 글자수 제한을 고려해 답변 길이 축소
-            temperature=0.7,
+#            temperature=0.7,
             system="당신은 유능한 카카오톡 챗봇입니다. 답변은 간결하고 명확하게 하세요.",
             messages=[
                 {"role": "user", "content": tt}
